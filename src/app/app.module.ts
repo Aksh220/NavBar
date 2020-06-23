@@ -4,10 +4,10 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import {DemoMaterialModule} from './material-module';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule , DemoMaterialModule ],
+  imports:      [ BrowserModule, FormsModule , MatIconModule],
   declarations: [ AppComponent, NavbarComponent ],
   bootstrap:    [ AppComponent ]
 })
