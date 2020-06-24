@@ -6,5 +6,5 @@ import{ DashboardComponent } from './dashboard/dashboard.component';
 export const appRoutes: Routes = [
   { path: 'navbar', component: NavbarComponent },
   { path: '', redirectTo: 'navbar', pathMatch: 'full' },
-  {path:'navbar/dashboard' , component:DashboardComponent }
+  { path:'dashboard' , component:DashboardComponent }
 ]

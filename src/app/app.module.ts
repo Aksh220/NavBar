@@ -9,12 +9,17 @@ import { FooterComponent } from './global/footer.component';
 import { HeaderComponent } from './global/header.component';
 import{ DashboardComponent } from './dashboard/dashboard.component';
 import {MatIconModule} from '@angular/material/icon';
+import { MatSidenavModule } from '@angular/material/sidenav';
 import { appRoutes } from './app.route';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule , MatIconModule,
-    RouterModule.forRoot (appRoutes)],
-  declarations: [ AppComponent, NavbarComponent, HeaderComponent, FooterComponent, DashboardComponent ],
+  imports: [
+    BrowserModule, FormsModule , MatIconModule, MatSidenavModule,
+    RouterModule.forRoot (appRoutes)
+  ],
+  declarations: [ 
+    AppComponent, NavbarComponent, HeaderComponent, FooterComponent, DashboardComponent
+  ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
