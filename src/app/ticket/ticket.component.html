@@ -1,0 +1,23 @@
+<h1>Raised Tickets</h1>
+<table mat-table [dataSource]="tickets" #mytable class="my-table mat-elevation-z8">
+  <ng-container  matColumnDef="support_ticket_id">
+    <mat-header-cell *matHeaderCellDef>Ticket Id</mat-header-cell>
+    <mat-cell *matCellDef="let Ticket">{{Ticket.support_ticket_id}}</mat-cell>
+  </ng-container>
+  <ng-container  matColumnDef="environment_id">
+    <mat-header-cell *matHeaderCellDef>Ticket Owner</mat-header-cell>
+    <mat-cell *matCellDef="let Ticket">{{Ticket.environment_id}}</mat-cell>
+  </ng-container>
+  <ng-container  matColumnDef="ticket_subject">
+    <mat-header-cell *matHeaderCellDef>Ticket Subject</mat-header-cell>
+    <mat-cell *matCellDef="let Ticket">{{Ticket.ticket_subject}}</mat-cell>
+  </ng-container>
+  <ng-container  matColumnDef="ticket_description">
+    <mat-header-cell *matHeaderCellDef>Ticket Message</mat-header-cell>
+    <mat-cell *matCellDef="let Ticket">{{Ticket.ticket_description}}</mat-cell>
+  </ng-container>
+
+  <mat-header-row *matHeaderRowDef="columns"></mat-header-row>
+  <mat-row *matRowDef="let row; columns: columns"></mat-row>    
+ 
+</table>
