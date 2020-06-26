@@ -11,15 +11,14 @@ import { FooterComponent } from './global/footer.component';
 import { HeaderComponent } from './global/header.component';
 import{ DashboardComponent } from './dashboard/dashboard.component';
 import { TicketComponent } from './ticket/ticket.component';
-import {MatIconModule} from '@angular/material/icon';
-import { MatSidenavModule } from '@angular/material/sidenav';
+
 import { HttpClientModule } from '@angular/common/http';
 import { appRoutes } from './app.route';
 import { TicketService } from './service/ticket.service';
 
 @NgModule({
   imports: [
-    BrowserModule, FormsModule , BrowserAnimationsModule, AngularMaterial, MatIconModule, MatSidenavModule, HttpClientModule,
+    BrowserModule, FormsModule , BrowserAnimationsModule, AngularMaterial, HttpClientModule, 
     RouterModule.forRoot (appRoutes)
   ],
   declarations: [ 
