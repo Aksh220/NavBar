@@ -2,7 +2,7 @@
 <nav class="main-menu">
   <ul>
     <li>
-      <a href="dashboard">
+      <a routerLink='/dashboard' routerLinkActive='active'>
         <mat-icon  class ="icon">dashboard</mat-icon>
         <span class="nav-text">Dashboard</span>
       </a>            
@@ -38,7 +38,7 @@
       </a>
     </li>
     <li>
-      <a href="#">
+      <a routerLink='/ticket' routerLinkActive='active'>
         <mat-icon  class ="icon">bug_report</mat-icon>
         <span class="nav-text">Issues and filter</span>
       </a>
@@ -65,7 +65,5 @@
     </li>  
   </ul>
 </nav>
-<div class="content">
- <dashboard-section></dashboard-section>
-</div>
+
 <footer-section></footer-section>

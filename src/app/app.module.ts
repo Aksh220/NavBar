@@ -15,11 +15,12 @@ import { TicketComponent } from './ticket/ticket.component';
 import { HttpClientModule } from '@angular/common/http';
 import { appRoutes } from './app.route';
 import { TicketService } from './service/ticket.service';
+ import { MatTableModule } from '@angular/material/table' 
 
 @NgModule({
   imports: [
-    BrowserModule, FormsModule , BrowserAnimationsModule, AngularMaterial, HttpClientModule, 
-    RouterModule.forRoot (appRoutes)
+    BrowserModule, FormsModule , BrowserAnimationsModule, AngularMaterial, HttpClientModule,  MatTableModule,
+    RouterModule.forRoot (appRoutes)  
   ],
   declarations: [ 
     AppComponent, NavbarComponent, HeaderComponent, FooterComponent, DashboardComponent, TicketComponent
