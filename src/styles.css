@@ -40,5 +40,8 @@ footer p {
 /*ticket css*/
 h2, .my-table {
   position: relative;
-  left: 100px;
+  left: 80px;
+  
+  -webkit-transition:all .1s linear;
+  transition:all .1s linear;        
 }

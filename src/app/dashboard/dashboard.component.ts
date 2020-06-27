@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
               <div>
                 <p> Torry Harris Business Solution </p>
               </div>`,
-  styles: ['p { font-size: 20px;position: relative; left: 100px; }']
+  styles: ['p { font-size: 20px;position: relative; left: 80px; }']
 })
 export class DashboardComponent { }
