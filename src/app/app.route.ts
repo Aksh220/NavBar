@@ -5,8 +5,7 @@ import{ DashboardComponent } from './dashboard/dashboard.component';
 import { TicketComponent } from './ticket/ticket.component';
 
 export const appRoutes: Routes = [
-  { path: 'navbar', component: NavbarComponent },
-  { path: '', redirectTo: 'navbar', pathMatch: 'full' },
   { path:'dashboard' , component: DashboardComponent },
+  { path: '', redirectTo: 'dashboard', pathMatch: 'full' },  
   { path:'ticket' , component: TicketComponent }
 ]
