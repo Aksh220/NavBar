@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { TicketService } from '../service/ticket.service';
 import { Ticket } from '../service/ticket.service';
-import { MatTableDataSource } from '@angular/material/table';
+import { MatTableModule, MatTableDataSource } from '@angular/material/table';
 import { isDataSource } from '@angular/cdk/collections';
-import { MatTableModule } from '@angular/material/table';
 
 @Component({
   selector: 'ticket-component',

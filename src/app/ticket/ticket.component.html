@@ -1,5 +1,6 @@
-<h1>Raised Tickets</h1>
-<table mat-table [datasource]="tickets" #mytable class="my-table mat-elevation-z8">
+<navbar-section></navbar-section>
+<h2>Raised Tickets</h2>
+<table mat-table [dataSource]="tickets" #mytable class="my-table mat-elevation-z8">
   <ng-container  matColumnDef="support_ticket_id">
     <mat-header-cell *matHeaderCellDef>Ticket Id</mat-header-cell>
     <mat-cell *matCellDef="let Ticket">{{Ticket.support_ticket_id}}</mat-cell>
