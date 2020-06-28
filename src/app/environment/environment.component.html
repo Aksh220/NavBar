@@ -1,0 +1,25 @@
+<navbar-section></navbar-section>
+<table class="topic-table" >
+    <tr>
+      <th>User Id</th>
+      <th>User Name</th>
+      <th>Environment ID</th>
+      <th>Environment Name</th>
+      <th>URL</th>
+      <th>Created Date</th>
+      <th>Expiry Date</th>
+      <th>Status</th>
+    </tr>
+  <tbody>
+    <tr *ngFor="let topic of env">
+      <td>{{topic.userDetails.userId}}</td>
+      <td>{{topic.userDetails.userName}}</td>
+      <td>{{topic.environment_id}}</td>
+      <td>{{topic.environment_name}}</td>
+      <td  *ngFor ="let item of topic.environment_details"><h4>Default Environment Detail</h4><a href="{{item.url}}">{{item.url}}</a><p>{{item.username}} / {{item.password}}</p></td>
+      <td>{{topic.created_date|date:'mediumDate'}}</td>
+      <td>{{topic.expiry_date|date:'mediumDate'}}</td>
+      <td>{{topic.environment_status}}</td>
+    </tr>
+  </tbody>
+</table> 

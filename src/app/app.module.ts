@@ -11,10 +11,12 @@ import { FooterComponent } from './global/footer.component';
 import { HeaderComponent } from './global/header.component';
 import{ DashboardComponent } from './dashboard/dashboard.component';
 import { TicketComponent } from './ticket/ticket.component';
+import { EnvironmentComponent } from './environment/environment.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { appRoutes } from './app.route';
 import { TicketService } from './service/ticket.service';
+import { EnvironmentService } from './service/environment.service';
 
 @NgModule({
   imports: [
@@ -22,9 +24,9 @@ import { TicketService } from './service/ticket.service';
     RouterModule.forRoot (appRoutes)  
   ],
   declarations: [ 
-    AppComponent, NavbarComponent, HeaderComponent, FooterComponent, DashboardComponent, TicketComponent
+    AppComponent, NavbarComponent, HeaderComponent, FooterComponent, DashboardComponent, TicketComponent, EnvironmentComponent
   ],
-  providers: [ TicketService ],
+  providers: [ TicketService, EnvironmentService ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
