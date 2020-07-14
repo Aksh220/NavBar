@@ -15,15 +15,14 @@
 .main-menu {
   background:#eeebeb;
   border-right:1px solid #e5e5e5;
-  position:absolute;
+  position:fixed;
   top:60px;
-  bottom:48px;
-  height:687px;
+  bottom: 48px;
   width:60px;
   overflow:hidden;
   -webkit-transition:width .05s linear;
   transition:width .05s linear;
-  z-index:1000;
+  z-index: 1;
   ul {
     margin:7px 0;
   }
@@ -64,3 +63,14 @@ nav ul,nav li {
   color:#fff;
   background-color:#5fa2db;
 }
+.content {
+   position: relative;
+  left: 80px; 
+  top: 60px;
+}
+.main-menu:hover + .content {
+  position: relative;
+  left: 280px; 
+  top: 60px; 
+}
+

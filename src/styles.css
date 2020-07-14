@@ -14,6 +14,8 @@ header {
   display: flex;
   justify-content: left;
   background-color: rgb(18, 0, 119);
+  position: fixed;
+  top: 0;
 }
 .header-wrapper {
   padding: 15px 25px;
@@ -25,8 +27,8 @@ footer {
   width: 100%;
   background-color: #ffffff;
   box-shadow: 1px -1px 2px rgba(0, 0, 0, 0.15);
-  position: relative;
-  top: 687px ;
+  position: fixed;
+  bottom: 0 ;
 }
 .footer-wrapper {
   padding: 15px 25px;
@@ -38,18 +40,7 @@ footer p {
   margin: 0;
   font-size: 0.8rem;
 }
-/*Ticket CSS*/
-h2, .my-table {
-  position: relative;
-  left: 80px; 
-  top: -50px;       
-}
 /*Environment CSS*/
-.topic-table, h3  {
-  position: relative;
-  left: 80px;
-  top: -50px;
-}
 th, td {
   padding: 8px;
   text-align: left;
