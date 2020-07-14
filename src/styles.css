@@ -16,6 +16,7 @@ header {
   background-color: rgb(18, 0, 119);
   position: fixed;
   top: 0;
+  z-index: 1;
 }
 .header-wrapper {
   padding: 15px 25px;
